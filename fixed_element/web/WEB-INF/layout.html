@@ -2,9 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Demo layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .head {
+            background-color: aqua;
+            border: solid gray;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .head-link {
+            left: 0px;
+            width: 100%;
+            border: solid forestgreen;
+            height: 45px;
+            margin-bottom: 10px;
+            background-color: gray;
+        }
+
+        .head-link a {
+            float: left;
+            display: block;
+            color: #ff22ff;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 17px;
+            text-decoration: forestgreen;
+        }
+
+        .left-bar {
+            float: left;
+            width: 25%;
+            height: 300px;
+            background: #cccccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .main {
+            float: left;
+            width: 50%;
+            height: 300px;
+            background: #f1f1f1;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .right-bar {
+            float: left;
+            width: 20%;
+            height: 300px;
+            background: #666666;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            height: 100px;
+            background: grey;
+        }
+    </style>
 </head>
 <body>
-
+<div class="head"></div>
+<div class="head-link">
+    <a href="#">Home</a>
+    <a>Student</a>
+    <a>Course</a>
+</div>
+<div class="left-bar">Left Side</div>
+<div class="main"> This is main</div>
+<div class="right-bar">Right side</div>
+<div class="footer"> Footer</div>
 </body>
 </html>
